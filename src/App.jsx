@@ -4,8 +4,8 @@ import Hero from "./components/Hero";
 import Benefits from "./components/Benefits";
 import Collaboration from "./components/Collaboration";
 import Services from "./components/Services";
+import Pricing from "./components/Pricing.jsx";
 // import Footer from "./components/Footer";
-// import Pricing from "./components/Pricing";
 // import Roadmap from "./components/Roadmap";
 
 const App = () => {
@@ -17,8 +17,8 @@ const App = () => {
         <Benefits />
         <Collaboration />
         <Services />
-        {/* <Pricing />
-        <Roadmap />
+        <Pricing />
+        {/* <Roadmap />
         <Footer /> */}
       </div>
 
