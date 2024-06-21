@@ -49,7 +49,7 @@ const Collaboration = () => {
               </div>
             </div>
 
-            <ul>
+            <ul className="animate-pulse">
               {collabApps.map((app, index) => (
                 <li
                   key={app.id}
