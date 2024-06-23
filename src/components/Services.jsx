@@ -16,10 +16,11 @@ const Services = () => {
         />
 
         <div className="relative">
-          <div className="relative z-1 flex items-center h-[39rem] mb-5 p-8 border border-n-1/10 rounded-3xl overflow-hidden lg:p-20 xl:h-[46rem]">
+          <div className="relative group z-1 flex items-center h-[39rem] mb-5 p-8 hover:border-white/30 border border-n-1/10 hover:bg-black/25 rounded-3xl overflow-hidden lg:p-20 xl:h-[46rem]">
             <div className="absolute top-0 left-0 w-full h-full pointer-events-none md:w-3/5 xl:w-auto">
               <img
-                className="w-full h-full object-cover md:object-right"
+                className="w-full group-hover:scale-[103%] duration-500 group-hover:-translate-x-10
+                group-hover:-translate-y-7 transition-transform h-full ease-out object-cover md:object-right"
                 width={800}
                 alt="Smartest AI"
                 height={730}
@@ -49,11 +50,11 @@ const Services = () => {
           </div>
 
           <div className="relative z-1 grid gap-5 lg:grid-cols-2">
-            <div className="relative min-h-[39rem] border border-n-1/10 rounded-3xl overflow-hidden">
+            <div className="relative group min-h-[39rem] hover:border-white/20 duration-200 group-hover:bg-gradient-to-b from-purple-500/10 to-blue-900/40 border border-n-1/10 rounded-3xl overflow-hidden">
               <div className="absolute inset-0">
                 <img
                   src={service2}
-                  className="h-full w-full object-cover"
+                  className="h-full w-full group-hover:scale-[103%] transition-transform object-cover"
                   width={630}
                   height={750}
                   alt="robot"
@@ -103,10 +104,10 @@ const Services = () => {
                 </ul>
               </div>
 
-              <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
+              <div className="relative group duration-150 ease-in-out hover:bg-gradient-to-l from-[#77095830] to-[#1a011a] h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
                 <img
                   src={service3}
-                  className="w-full h-full object-cover"
+                  className="w-full group-hover:scale-[106%] duration-300 transition-transform h-full object-cover"
                   width={520}
                   height={400}
                   alt="Scary robot"
